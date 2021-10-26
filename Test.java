@@ -1,16 +1,10 @@
-package demo3;
+package demo7;
 
 public class Test {
     public static void main(String[] args) {
-        int x = 10, y = 20;
-        System.out.println("x = "+ x +","+"y = "+y);//10 20
-        change(x,y);
-        System.out.println("x = "+ x +","+"y = "+y); // 10 20
-    }
-
-    private static void change(int x, int y) {
-        x += 20;
-        y += 20;
-        System.out.println("x = "+ x +","+"y = "+y);// 30 40
+        Book b = new Book();
+        System.out.println(b);
+        b = new Book(5684, "双城记", 60, "查尔斯.狄更斯");
+        System.out.println(b);
     }
 }
